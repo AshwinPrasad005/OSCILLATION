@@ -3,7 +3,7 @@ var engine,world,sling,stick1;
 const Engine = Matter.Engine;
 const Constraint = Matter.Constraint;
 const World = Matter.World;
-const Body = Matter.Body;
+const Bodies = Matter.World;
 
 function setup() {
 
