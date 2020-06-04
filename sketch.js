@@ -1,4 +1,4 @@
-var engine,world,sling,stick1;
+var engine,world,sling,stick1,ball1;
 
 const Engine = Matter.Engine;
 const Constraint = Matter.Constraint;
@@ -12,13 +12,16 @@ function setup() {
 
   createCanvas(400,400);
 
-  //sling = new Oscillating()
-  stick1 = new Stick(200,100,100,10);
+   stick1 = new Stick(200,100,100,10);
+   ball1 = new Ball(200,300,30);
+   sling = new Oscillating(stick1,ball1)
 }
 
 function draw() {
   background(80,80,80);
   Engine.update(engine);
-  stick1.display();  
+  stick1.display(); 
+  sling.display();
+  ball1.display(); 
   drawSprites();
 }

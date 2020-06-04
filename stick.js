@@ -10,10 +10,10 @@ class Stick{
     }
     display(){
         var pos = this.body.position;
-        var angle = this.angle.body;
+        //var angle = this.angle.body;
         pop();
-        translate(pos.x,pos.y);
-        rotate(angle);
+        //translate(pos.x,pos.y);
+        //rotate(angle);
         rectMode(CENTER);
         rect(this.body,pos.x,pos.y,this.width,this.height);
         push();
