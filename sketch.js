@@ -1,14 +1,14 @@
 var engine,world,sling,stick1,ball1;
 
 const Engine = Matter.Engine;
-const Constraint = Matter.Constraint;
+const Constraints = Matter.Constraint;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 
 function setup() {
 
   engine = Engine.create();
-  world = engine.World;
+  world = engine.world;
 
   createCanvas(400,400);
 

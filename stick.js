@@ -15,7 +15,7 @@ class Stick{
         //translate(pos.x,pos.y);
         //rotate(angle);
         rectMode(CENTER);
-        rect(this.body,pos.x,pos.y,this.width,this.height);
+        rect(pos.x,pos.y,this.width,this.height);
         push();
 
     }
