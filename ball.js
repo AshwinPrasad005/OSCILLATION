@@ -1,7 +1,6 @@
 class Ball{
     constructor(x,y,radius){
         var options ={
-            restituition:0.3,
             density:1.0,
             friction:0.3,
             isStatic:false
@@ -10,12 +9,14 @@ class Ball{
        World.add(world,this.body)
     }
     display(){
-        var angle = this.angle.position;
+        //var angle = this.angle.body;
         pop();
-        translate(this.body.position.x,this.body.position.y);
-        rotate(angle);
+        //translate(this.body.position.x,this.body.position.y);
+        //rotate(angle);
         ellipseMode(CENTER);
-        ellipse(this.body,this.body.position.x,this.body.position.y,this.radius);
+        fill("blue")
+        ellipse(this.body.position.x,this.body.position.y,this.radius);
+        push();
     }
 
 }

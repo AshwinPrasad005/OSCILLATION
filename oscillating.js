@@ -1,8 +1,8 @@
 class Oscillating{
-    constructor(bodyA1, bodyB1){
+    constructor(bodyA1, point){
         var options = {
             bodyA: bodyA1.body,
-            bodyb: bodyB1.body,
+            pointB: point,
             stiffness: 0.004,
             length: 5
         }
@@ -11,8 +11,8 @@ class Oscillating{
     }
 
     display(){
-        strokeWeight(3);
-        line(this.sling.bodyA1.position.x,this.sling.bodyA1.position.y,this.sling.bodyB1.position.x,this.sling.BodyB1.position.y);
+        strokeWeight(4);
+        line(this.sling.bodyA.position.x,this.sling.bodyA.position.y,this.sling.pointB.x,this.sling.pointB.y);
     }
     // attach(body){
     //     this.body.
