@@ -25,3 +25,10 @@ function draw() {
   sling.display();
   drawSprites();
 }
+
+function movement(){
+  if(keyCode === "space"){
+    ball1.x = mouseX;
+    ball1.y = mouseY
+  }
+}
