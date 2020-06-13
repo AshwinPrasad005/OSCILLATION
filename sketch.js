@@ -4,6 +4,7 @@ const Engine = Matter.Engine;
 const Constraints = Matter.Constraint;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
+const MouseConstraint = Matter.Constraint;
 
 function setup() {
 
@@ -24,11 +25,11 @@ function draw() {
   ball1.display(); 
   sling.display();
   drawSprites();
+  movement();
 }
 
 function movement(){
-  if(keyCode === "space"){
-    ball1.x = mouseX;
-    ball1.y = mouseY
+  if(KeyIsPressed == "space"){
+    Matter.Body.setPosition(ball1.body, {x: mouseX , y: mouseY});
   }
 }
