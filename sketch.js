@@ -25,11 +25,11 @@ function draw() {
   ball1.display(); 
   sling.display();
   drawSprites();
-  movement();
+  KeyCode();
 }
 
-function movement(){
-  if(KeyIsPressed == "space"){
+function KeyCode(){
+  if(KeyCode == 32){
     Matter.Body.setPosition(ball1.body, {x: mouseX , y: mouseY});
   }
 }
