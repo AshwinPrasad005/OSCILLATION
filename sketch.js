@@ -25,11 +25,11 @@ function draw() {
   ball1.display(); 
   sling.display();
   drawSprites();
-  KeyCode();
+  KeyPressed();
 }
 
-function KeyCode(){
-  if(KeyCode == 32){
+function KeyPressed(){
+  if(KeyPressed == "UP_ARROW"){
     Matter.Body.setPosition(ball1.body, {x: mouseX , y: mouseY});
   }
 }
