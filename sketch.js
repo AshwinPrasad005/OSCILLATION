@@ -25,11 +25,14 @@ function draw() {
   ball1.display(); 
   sling.display();
   drawSprites();
-  KeyPressed();
+  // MouseDragged();
+  // MouseReleased();
 }
 
-function KeyPressed(){
-  if(KeyPressed == "UP_ARROW"){
-    Matter.Body.setPosition(ball1.body, {x: mouseX , y: mouseY});
-  }
+function mouseDragged(){
+  Matter.Body.setPosition(ball1.body, {x: mouseX , y: mouseY});
+}
+
+function mouseReleased(){
+  sling.fly();
 }

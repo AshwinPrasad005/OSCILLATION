@@ -3,7 +3,7 @@ class Oscillating{
         var options = {
             bodyA: bodyA1.body,
             bodyB: bodyB1.body,
-            stiffness: 0.004,
+            stiffness: 0.007,
             length: 5
         }
         this.sling = Constraints.create(options);
@@ -18,4 +18,7 @@ class Oscillating{
     // attach(body){
     //     this.body.
     // }
+    fly(){
+        this.body.position = null;
+    }
 }
